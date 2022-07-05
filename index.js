@@ -6,7 +6,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.start ((ctx) => {
     ctx.reply(`
         Hi ${ctx.message.from.first_name} ${ctx.message.from.last_name}
-         I am bot created by Artur Stepanyan.
+        I am bot, created by Artur.
     `)
     console.log(ctx.message)
 
