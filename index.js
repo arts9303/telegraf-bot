@@ -7,8 +7,9 @@ bot.start ((ctx) => {
     ctx.reply(`
         Hi ${ctx.message.from.first_name} ${ctx.message.from.last_name}
         I am bot, created by Artur.
-    `)
-    console.log(ctx.message)
+    `);
+    bot.hears('hi', (ctx) => ctx.reply('Hi there') );
+    console.log(ctx.message);
 
     //https://tlgrm.ru/_/stickers/3dc/9f9/3dc9f995-0816-3e23-89a0-08a47d03701b/4.webp
 })
